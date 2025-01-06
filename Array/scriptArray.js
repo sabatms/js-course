@@ -76,5 +76,26 @@ w.push(5);
 console.log("w =", w);
 console.log("z =", z);
 
+// مقایسه دیتاها با هم
+console.log(5 == "5"); // true - مقایسه با تبدیل نوع
+console.log(5 === "5"); // false - مقایسه بدون تبدیل نوع
 
-//Garbage collector:
+console.log(null == undefined); // true
+console.log(null === undefined); // false - در مقایسه سختگیرانه، این دو متفاوت هستند
+
+console.log(5 != "5"); // false - (نابرابری)با تبدیل نوع
+console.log(5 !== "5"); // true - (نابرابری)بدون تبدیل نوع
+
+//Spread Operator : (عملگر گسترده)
+let Numbers = [1, 2, 3];
+let copiedNumbers = [...Numbers];
+copiedNumbers.unshift(7);
+
+console.log(Numbers);
+console.log(copiedNumbers);
+
+let first = [6, 7, 9];
+let second = [10, 11, 12];
+let combined =[...first,...second];
+
+console.log(combined);
