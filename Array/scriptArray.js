@@ -96,6 +96,33 @@ console.log(copiedNumbers);
 
 let first = [6, 7, 9];
 let second = [10, 11, 12];
-let combined =[...first,...second];
+let combined = [...first, ...second];
 
 console.log(combined);
+
+// Aray Destructurring
+
+const data = ["saba", "tms", "shiraz", 26, 1, 2, 3, 4];
+
+const [name, lastname, city, age, ...other] = data;
+console.log(name);
+console.log(lastname);
+console.log(city);
+console.log(age);
+console.log(other);
+// challenge :
+
+const fullStack = [
+  ["HTML", "Css", "js", "React", "TypeScript"],
+  ["Node", "express", "MonGoDB"],
+];
+
+const [frontend, backend] = fullStack;
+console.log(frontend);
+console.log(backend);
+
+const [, css, , react] = frontend;
+console.log(css, react);
+
+const [,express ,] = backend;
+console.log(express);
