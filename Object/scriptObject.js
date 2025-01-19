@@ -7,7 +7,7 @@ const data = {
   country: "IR",
   skils: ["html", "css", "js", "react", "next.js"],
   6: "yes",
-  [key1]: "my favaorut sport",
+  [key1]: "my favaorut sport.",
 };
 console.log(data);
 
