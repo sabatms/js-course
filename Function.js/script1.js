@@ -22,3 +22,4 @@ function sum1( num1 , num2){
     return result2
 }
 console.log(sum1(3,4));
+
