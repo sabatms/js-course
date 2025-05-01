@@ -102,3 +102,16 @@ let isIsland2 = false;
 isIsland2 = true;
 console.log(isIsland2);
 
+function testScope() {
+    if (true) {
+      var x = 1;
+      let y = 2;
+      const z = 3;
+      console.log("داخل بلوک:", x, y, z); // 1 2 3
+    }
+  
+    console.log("بیرون بلوک:", x);  // 1 (چون var تابعیه)
+    // console.log(y); // خطا می‌ده
+    // console.log(z); // خطا می‌ده
+  }
+  testScope();
